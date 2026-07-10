@@ -49,10 +49,7 @@ class RAGPipeline:
             question,
             retrieved_chunks,
         )
-        print("=" * 80)
-        print(prompt)
-        print("=" * 80)
-
+    
         try:
             response = self.client.models.generate_content(
                 model=self.model_name,
